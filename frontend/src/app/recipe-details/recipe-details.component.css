@@ -1,35 +1,83 @@
-.nav {
+p {
+  font-weight: 400;
+  font-size: 18px;
+  color: #232323;
+  margin: 15px 0px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.recipe-detail {
+  margin-top: 50px;
   display: flex;
-  justify-content: space-between;
-  height: 50px;
-  width: 100vw;
-  box-shadow: 0px 2px 25px 0px #90909075;
-  z-index: 10;
-  position: fixed;
-  top: 0;
-  background-color: #FFF2DD;
+  overflow-y: scroll;
+  min-height: calc(100vh - 50px);
 }
 
-.nav-title {
-  font-size: 25px;
+.recipe-sidebar {
+  width: 400px;
+  box-shadow: 2px 0px 10px 0px #90909075;
+  background: #FBEEC125;
+}
+
+.recipe-title {
   font-weight: 700;
-  color: #659DBD;
-  margin: auto 0px auto 25px;
-  cursor: pointer;
+  font-size: 45px;
+  margin: 15px 30px;
+  color: #607D8B;
 }
 
-.nav-buttons {
-  margin: auto 25px auto 0px;
+.recipe-img {
+  margin: 15px 30px;
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px 1px #607D8B;
 }
 
-.nav-button {
-  cursor: pointer;
-  height: 25px;
-  color: #FFFFFF;
-  background-color: #659DBD;
-  border: 1px solid #FFFFFF;
-  /* box-shadow: 0px 0px 2px 2px #FFFFFF; */
-  border-radius: 10px;
-  margin-right: 5px;
-  border-radius: 5px;
+.ingredient-item {
+  display: flex;
+}
+
+.ingredient-img {
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 50px;
+  max-height: 50px;
+  margin: 5px 15px 5px 30px;
+}
+
+.recipe-main {
+  width: 100%;
+  padding: 0px 30px;
+  background: #8D874125;
+}
+
+.directions-title {
+  font-weight: 700;
+  font-size: 35px;
+  margin: 15px 0px;
+  color: #607D8B;
+}
+
+.additional-info {
+  min-width: 200px;
+  padding: 0px 15px;
+  box-shadow: -2px 0px 10px 0px #90909075;
+}
+
+.nutrition-list {
+  margin: auto;
+}
+
+.nutrition-list h1 {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 15px 0px;
+  color: #607D8B;
+}
+
+.nutrition-list p {
+  font-size: 12px;
 }
