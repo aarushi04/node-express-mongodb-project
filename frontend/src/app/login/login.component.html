@@ -1,0 +1,23 @@
+<div class="login-modal md-effect-1" id="modal-2">
+  <div class="md-content">
+    <button class='close-button' (click)="closeModal()">X</button>
+    <button class='demo-login' (click)="demoLogin()">Demo</button>
+
+    <p>Log In!</p>
+
+    <form class='login-form' (submit)="handleLogin()">
+      <div class='login-username-total'>
+        <label id='login-username'>Username:</label>
+        <input id='login-username-input' type="text" [(ngModel)]="username" name="username" />
+      </div>
+      <div class='login-password-total'>
+        <label id='login-password'>Password:</label>
+        <input id='login-password-input' type="password" [(ngModel)]="password" name="password" />
+      </div>
+      <input id='login-button' type="submit" value="Log In" />
+    </form>
+    		<p id="login-error">{{error}}</p>
+	</div>
+</div>
+
+<div class="md-overlay" (click)="closeModal()"></div>
