@@ -1,4 +1,4 @@
-# node-express-mongodb-project
+# personal_recipe_book
 # Pantry Pal
 
 Pantry Pal is a web application designed for users to search through a collection of recipes collected through the web, matching based on their ingredients.
